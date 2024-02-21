@@ -1,12 +1,12 @@
-import Students from '@/app/ui/dashboard/Students/Students';
+import StudentsComponent from '@/app/ui/dashboard/Students/StudentsComponent';
 import React from 'react';
 
-const Products = () => {
+const Students = () => {
   return (
     <div>
-      <Students/>
+      <StudentsComponent/>
     </div>
   );
 }
 
-export default Products;
+export default Students;

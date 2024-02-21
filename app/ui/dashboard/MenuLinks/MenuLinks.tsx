@@ -14,11 +14,10 @@ interface MenuItem {
 const MenuLinks: React.FC<{ item: MenuItem }> = ({ item }) => {
 
     const pathname= usePathname()
-    console.log(pathname)
 
     return (
       <div>
-        <Link href={item.path} className={`flex items-center my-2 rounded-sm p-3 hover:bg-secondary ${pathname===item.path && "bg-secondary" }`}>
+        <Link href={item.path} className={`flex items-center my-2 rounded-sm p-3 hover:bg-secondary ${pathname===item.path && "bg -secondary" }`}>
         <div className="ml-4 mr-2">
             {item.icon}
         </div>

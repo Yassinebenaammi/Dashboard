@@ -1,9 +1,8 @@
-import Login from "./ui/login/Login";
 
 export default function Home() {
   return (
     <div>
-      <Login/>
+      Home Page
     </div>
   );
 }

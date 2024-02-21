@@ -1,17 +1,25 @@
+"use client"
+import AnglePieChart from "../ui/dashboard/AnglePieChart/AnglePieChart";
 import Card from "../ui/dashboard/Card/Cards";
-import Charts from "../ui/dashboard/Chart/Charts";
-import RightBar from "../ui/dashboard/Rightbar/RightBar";
-import Transactions from "../ui/dashboard/Transactions/Transactions";
+import Linechart from "../ui/dashboard/LineChart/LineChart";
 
 const dashboard = () => {
   return (
-    <div className=" mt-3">
-        <div className="flex justify-between">
-          <Card/>
+    <div className="mt-3">
+      <div className="w-full mt-3">
+        <Card />
+      </div>
+      <div className="flex">
+        <div className="w-full pr-2">
+          <Linechart />
         </div>
+        {/* <div className="w-2/3 pl-2">
+          <AnglePieChart />
+        </div> */}
+      </div>
     </div>
-      
   );
 }
 
 export default dashboard;
+  
